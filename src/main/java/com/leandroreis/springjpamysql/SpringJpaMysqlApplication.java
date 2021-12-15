@@ -2,7 +2,6 @@ package com.leandroreis.springjpamysql;
 
 import com.leandroreis.springjpamysql.model.Contact;
 import com.leandroreis.springjpamysql.repository.ContactRepository;
-import org.aspectj.bridge.context.CompilationAndWeavingContext;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
