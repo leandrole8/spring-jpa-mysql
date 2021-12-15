@@ -19,15 +19,15 @@ public class SpringJpaMysqlApplication {
 	}
 
 	@Bean
-	CommandLineRunner init(ContactRepository repository){
+	CommandLineRunner init(ContactRepository repository) {
 		return args -> {
 			repository.deleteAll();
 			LongStream.range(1, 11)
 					.mapToObj(i -> {
 						Contact c = new Contact();
 						c.setName("Contact " + i);
-						c.setEmail("Contact " + i + "@email.com");
-						c.setPhone("(034) 99999-9999");
+						c.setEmail("contact" + i + "@email.com");
+						c.setPhone("(111) 111-1111");
 						return c;
 					})
 					.map(v -> repository.save(v))
